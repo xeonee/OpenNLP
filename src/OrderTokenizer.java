@@ -33,6 +33,9 @@ public class OrderTokenizer implements Tokenizer{
 	    char pc = 0;
 	    for (int ci = 0; ci < sl; ci++) {
 	      char c = s.charAt(ci);
+//	      if(c == '.') {
+//	    		continue;
+//	    	}
 	      if (StringUtil.isWhitespace(c)) {
 	        charType = CharacterEnum.WHITESPACE;
 	      }
